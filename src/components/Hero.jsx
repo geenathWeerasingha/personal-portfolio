@@ -6,13 +6,13 @@ function Hero() {
       {/* Animated background shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Large gradient orb */}
-        <div className="absolute top-1/4 -right-1/4 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute -bottom-1/4 -left-1/4 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/4 -right-1/4 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute -bottom-1/4 -left-1/4 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
         
         {/* Floating geometric shapes */}
-        <div className="absolute top-1/3 left-1/4 w-20 h-20 border border-cyan-500/20 rounded-lg rotate-45 animate-float" />
-        <div className="absolute bottom-1/3 right-1/4 w-16 h-16 border border-teal-500/20 rounded-full animate-float" style={{ animationDelay: '3s' }} />
-        <div className="absolute top-2/3 left-1/3 w-12 h-12 border border-slate-500/20 rounded-lg rotate-12 animate-float" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/3 left-1/4 w-20 h-20 border border-cyan-500/30 rounded-lg rotate-45 animate-float" />
+        <div className="absolute bottom-1/3 right-1/4 w-16 h-16 border border-teal-500/30 rounded-full animate-float" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-2/3 left-1/3 w-12 h-12 border border-slate-300 rounded-lg rotate-12 animate-float" style={{ animationDelay: '1.5s' }} />
       </div>
 
       <div className="section-container relative z-10">
@@ -22,7 +22,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-cyan-400 text-sm font-medium tracking-wider uppercase mb-6"
+            className="text-cyan-600 text-sm font-medium tracking-wider uppercase mb-6"
           >
             Software Engineer
           </motion.p>
@@ -32,7 +32,7 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-800 mb-6"
           >
             Geenath Weerasingha
           </motion.h1>
@@ -42,12 +42,12 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl sm:text-2xl md:text-3xl text-slate-400 font-light mb-4"
+            className="text-xl sm:text-2xl md:text-3xl text-slate-500 font-light mb-4"
           >
             Full-Stack{' '}
-            <span className="text-cyan-400">·</span>{' '}
+            <span className="text-cyan-500">·</span>{' '}
             AI{' '}
-            <span className="text-cyan-400">·</span>{' '}
+            <span className="text-cyan-500">·</span>{' '}
             Cloud (AWS)
           </motion.p>
 
@@ -97,7 +97,7 @@ function Hero() {
         >
           <a
             href="#about"
-            className="flex flex-col items-center gap-2 text-slate-500 hover:text-cyan-400 transition-colors"
+            className="flex flex-col items-center gap-2 text-slate-400 hover:text-cyan-600 transition-colors"
           >
             <span className="text-xs uppercase tracking-wider">Scroll</span>
             <svg className="w-5 h-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -26,7 +26,7 @@ function App() {
         </main>
         
         {/* Footer */}
-        <footer className="py-8 border-t border-slate-800/50">
+        <footer className="py-8 border-t border-slate-200">
           <div className="section-container text-center">
             <p className="text-slate-500 text-sm">
               © {new Date().getFullYear()} Geenath Weerasingha. Built with React & Tailwind CSS.

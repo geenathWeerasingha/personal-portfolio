@@ -88,7 +88,7 @@ const cardVariants = {
 
 function Highlights() {
   return (
-    <section id="highlights" className="section-padding bg-slate-900/30">
+    <section id="highlights" className="section-padding bg-slate-50">
       <div className="section-container">
         {/* Section Header */}
         <motion.div
@@ -98,11 +98,11 @@ function Highlights() {
           viewport={{ once: true, margin: '-100px' }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
             Key Highlights
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-teal-500 mx-auto rounded-full mb-6" />
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <p className="text-slate-600 max-w-2xl mx-auto">
             Notable projects and achievements that demonstrate my expertise in building scalable, secure, and AI-powered systems.
           </p>
         </motion.div>
@@ -123,21 +123,21 @@ function Highlights() {
             >
               {/* Header */}
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/20 to-teal-500/20 rounded-xl flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 rounded-xl flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform duration-300">
                   {highlight.icon}
                 </div>
                 <div className="flex-1">
-                  <span className="text-xs font-medium text-cyan-400 uppercase tracking-wider">
+                  <span className="text-xs font-medium text-cyan-600 uppercase tracking-wider">
                     {highlight.type}
                   </span>
-                  <h3 className="text-lg font-semibold text-white mt-1">
+                  <h3 className="text-lg font-semibold text-slate-800 mt-1">
                     {highlight.title}
                   </h3>
                 </div>
               </div>
 
               {/* Description */}
-              <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
                 {highlight.description}
               </p>
 
@@ -154,11 +154,11 @@ function Highlights() {
               </ul>
 
               {/* Tech Tags */}
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-700/50">
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-200">
                 {highlight.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs px-2 py-1 bg-slate-800/80 border border-slate-700/50 rounded text-slate-400"
+                    className="text-xs px-2 py-1 bg-slate-100 border border-slate-200 rounded text-slate-600"
                   >
                     {tech}
                   </span>

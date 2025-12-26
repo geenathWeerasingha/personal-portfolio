@@ -8,11 +8,11 @@
   }
   
   body {
-    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+    @apply bg-white text-slate-800 font-sans antialiased;
   }
   
   ::selection {
-    @apply bg-cyan-500/30 text-white;
+    @apply bg-cyan-500/30 text-slate-900;
   }
   
   /* Custom scrollbar */
@@ -21,15 +21,15 @@
   }
   
   ::-webkit-scrollbar-track {
-    @apply bg-slate-900;
+    @apply bg-slate-100;
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-slate-700 rounded-full;
+    @apply bg-slate-300 rounded-full;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-slate-600;
+    @apply bg-slate-400;
   }
 }
 
@@ -43,23 +43,23 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-cyan-400 via-cyan-300 to-teal-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-cyan-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent;
   }
   
   .glass-card {
-    @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl;
+    @apply bg-white backdrop-blur-sm border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow;
   }
   
   .btn-primary {
-    @apply inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-cyan-500/25;
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-cyan-500/25;
   }
   
   .btn-secondary {
-    @apply inline-flex items-center gap-2 px-6 py-3 border border-slate-600 hover:border-cyan-500 text-slate-200 hover:text-cyan-400 font-medium rounded-lg transition-all duration-200;
+    @apply inline-flex items-center gap-2 px-6 py-3 border border-slate-300 hover:border-cyan-500 text-slate-700 hover:text-cyan-600 font-medium rounded-lg transition-all duration-200;
   }
   
   .skill-badge {
-    @apply px-3 py-1.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-cyan-500/50 hover:text-cyan-400 transition-colors duration-200;
+    @apply px-3 py-1.5 bg-slate-100 border border-slate-200 rounded-lg text-sm text-slate-600 hover:border-cyan-500/50 hover:text-cyan-600 transition-colors duration-200;
   }
 }
 
@@ -83,16 +83,16 @@
 /* Gradient mesh background for hero */
 .hero-gradient {
   background: 
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(6, 182, 212, 0.15), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(20, 184, 166, 0.1), transparent),
-    radial-gradient(ellipse 50% 30% at 20% 80%, rgba(6, 182, 212, 0.08), transparent);
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(6, 182, 212, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(20, 184, 166, 0.06), transparent),
+    radial-gradient(ellipse 50% 30% at 20% 80%, rgba(6, 182, 212, 0.05), transparent);
 }
 
 /* Subtle grid pattern */
 .grid-pattern {
   background-image: 
-    linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 

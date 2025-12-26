@@ -28,7 +28,7 @@ function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-slate-950/80 backdrop-blur-lg border-b border-slate-800/50'
+          ? 'bg-white/80 backdrop-blur-lg border-b border-slate-200 shadow-sm'
           : 'bg-transparent'
       }`}
     >
@@ -37,7 +37,7 @@ function Navbar() {
           {/* Logo / Name */}
           <a
             href="#"
-            className="text-lg font-semibold text-white hover:text-cyan-400 transition-colors"
+            className="text-lg font-semibold text-slate-800 hover:text-cyan-600 transition-colors"
           >
             GW
           </a>
@@ -48,7 +48,7 @@ function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm text-slate-400 hover:text-cyan-400 transition-colors duration-200"
+                className="text-sm text-slate-600 hover:text-cyan-600 transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -66,7 +66,7 @@ function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-slate-400 hover:text-white transition-colors"
+            className="md:hidden p-2 text-slate-600 hover:text-slate-800 transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -83,14 +83,14 @@ function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-slate-800/50">
+          <div className="md:hidden py-4 border-t border-slate-200 bg-white">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={handleLinkClick}
-                  className="text-slate-400 hover:text-cyan-400 transition-colors py-2"
+                  className="text-slate-600 hover:text-cyan-600 transition-colors py-2"
                 >
                   {link.name}
                 </a>
