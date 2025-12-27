@@ -88,7 +88,7 @@ const cardVariants = {
 
 function Highlights() {
   return (
-    <section id="highlights" className="section-padding bg-slate-50">
+    <section id="highlights" className="section-padding bg-slate-50 dark:bg-slate-900/50">
       <div className="section-container">
         {/* Section Header */}
         <motion.div
@@ -98,11 +98,11 @@ function Highlights() {
           viewport={{ once: true, margin: '-100px' }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-white mb-4">
             Key Highlights
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-teal-500 mx-auto rounded-full mb-6" />
-          <p className="text-slate-600 max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             Notable projects and achievements that demonstrate my expertise in building scalable, secure, and AI-powered systems.
           </p>
         </motion.div>
@@ -119,33 +119,33 @@ function Highlights() {
             <motion.div
               key={highlight.title}
               variants={cardVariants}
-              className="glass-card p-6 hover:border-cyan-500/30 transition-all duration-300 group"
+              className="glass-card p-6 hover:border-cyan-500/30 dark:hover:border-cyan-400/30 transition-all duration-300 group"
             >
               {/* Header */}
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 rounded-xl flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/10 to-teal-500/10 dark:from-cyan-400/20 dark:to-teal-400/20 rounded-xl flex items-center justify-center text-cyan-600 dark:text-cyan-400 group-hover:scale-110 transition-transform duration-300">
                   {highlight.icon}
                 </div>
                 <div className="flex-1">
-                  <span className="text-xs font-medium text-cyan-600 uppercase tracking-wider">
+                  <span className="text-xs font-medium text-cyan-600 dark:text-cyan-400 uppercase tracking-wider">
                     {highlight.type}
                   </span>
-                  <h3 className="text-lg font-semibold text-slate-800 mt-1">
+                  <h3 className="text-lg font-semibold text-slate-800 dark:text-white mt-1">
                     {highlight.title}
                   </h3>
                 </div>
               </div>
 
               {/* Description */}
-              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
                 {highlight.description}
               </p>
 
               {/* Key Points */}
               <ul className="space-y-2 mb-4">
                 {highlight.points.map((point, index) => (
-                  <li key={index} className="flex items-start gap-2 text-sm text-slate-500">
-                    <svg className="w-4 h-4 text-cyan-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <li key={index} className="flex items-start gap-2 text-sm text-slate-500 dark:text-slate-500">
+                    <svg className="w-4 h-4 text-cyan-500 dark:text-cyan-400 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>{point}</span>
@@ -154,11 +154,11 @@ function Highlights() {
               </ul>
 
               {/* Tech Tags */}
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-200">
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-200 dark:border-slate-700">
                 {highlight.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs px-2 py-1 bg-slate-100 border border-slate-200 rounded text-slate-600"
+                    className="text-xs px-2 py-1 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded text-slate-600 dark:text-slate-400"
                   >
                     {tech}
                   </span>
@@ -173,4 +173,3 @@ function Highlights() {
 }
 
 export default Highlights
-

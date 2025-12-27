@@ -71,7 +71,7 @@ const itemVariants = {
 
 function Skills() {
   return (
-    <section id="skills" className="section-padding bg-slate-50">
+    <section id="skills" className="section-padding bg-slate-50 dark:bg-slate-900/50">
       <div className="section-container">
         {/* Section Header */}
         <motion.div
@@ -81,7 +81,7 @@ function Skills() {
           viewport={{ once: true, margin: '-100px' }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 dark:text-white mb-4">
             Skills & Expertise
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-teal-500 mx-auto rounded-full" />
@@ -99,12 +99,12 @@ function Skills() {
             <motion.div
               key={area.title}
               variants={itemVariants}
-              className="glass-card p-6 text-center hover:border-cyan-500/50 transition-colors duration-300"
+              className="glass-card p-6 text-center hover:border-cyan-500/50 dark:hover:border-cyan-400/50 transition-colors duration-300"
             >
-              <div className="w-12 h-12 mx-auto mb-4 bg-cyan-500/10 rounded-lg flex items-center justify-center text-cyan-600">
+              <div className="w-12 h-12 mx-auto mb-4 bg-cyan-500/10 dark:bg-cyan-400/20 rounded-lg flex items-center justify-center text-cyan-600 dark:text-cyan-400">
                 {area.icon}
               </div>
-              <h3 className="text-sm font-medium text-slate-700">{area.title}</h3>
+              <h3 className="text-sm font-medium text-slate-700 dark:text-slate-300">{area.title}</h3>
             </motion.div>
           ))}
         </motion.div>
@@ -116,14 +116,14 @@ function Skills() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: '-100px' }}
         >
-          <h3 className="text-xl font-semibold text-slate-800 mb-8 text-center">
+          <h3 className="text-xl font-semibold text-slate-800 dark:text-white mb-8 text-center">
             Tech Stack
           </h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {Object.entries(techStack).map(([category, skills]) => (
               <div key={category} className="glass-card p-6">
-                <h4 className="text-sm font-semibold text-cyan-600 uppercase tracking-wider mb-4">
+                <h4 className="text-sm font-semibold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider mb-4">
                   {category}
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -143,4 +143,3 @@ function Skills() {
 }
 
 export default Skills
-
